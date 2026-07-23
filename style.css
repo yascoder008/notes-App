@@ -385,6 +385,19 @@ section.writeCard div.card div.special div.colors{
     header p{
      font-size: 1rem;
     }
+
+    section.writeCard{
+        height: 130vh;
+    }
+
+    section.writeCard div.card{
+        height: 700px;
+    }
+
+    section.writeCard div.card button.add{
+        margin-top: 80px;
+    }
+    
     section.writeCard div.card div.special{
         flex-direction: column;
         gap: 16px;
