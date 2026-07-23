@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<section class="hide" id="write-card">
+  <div class="card">
+    <img src="close.png" alt="close icon" class="closeIcon" onclick="closeCard()">
+    <h3>Title:</h3>
+    <input type="text" id="title-input">
+    <br><br>
+    <h3>Note:</h3>
+    <textarea id="note-input"></textarea>
+    <br><br>
+    <div class="special">
+      <div class="colors">
+       <div class="white" onclick="changeColor('white')">.</div>
+       <div class="blue" onclick="changeColor('blue')">.</div>
+       <div class="purple"  onclick="changeColor('purple')">.</div>
+       <div class="red" onclick="changeColor('red')">.</div>
+       <div class="orange" onclick="changeColor('orange')">.</div>
+       <div class="pink" onclick="changeColor('pink')">.</div>
+     </div>
+     <select class="category">
+        <option selected disabled>Categories</option>
+        <option>Work</option>
+        <option>Shopping</option>
+        <option>Study</option>
+        <option>Ideas</option>
+        <option>Events</option>
+        <option>Journal</option>
+        <option>Contact</option>
+        <option>Home</option>
+        <option>Entertainment</option>
+     </select>
+    </div>
+    <br>
+    <button class="add" id="add-btn" onclick="addNote()">ADD</button>
+  </div>
+</section>
+
+<main id="main">
+ <header>
+    <h1>NoteIt App</h1> 
+    <p>Write your thoughts, your tasks in style.</p> 
+  </header>
+
+  <section class="container">
+   <div class="inputContainer">
+    <input type="text" placeholder="write your note..." id="iput" onclick="writeNote()"> 
+    <select class="filters">
+        <option>All</option>
+        <option>Work</option>
+        <option>Shopping</option>
+        <option>Study</option>
+        <option>Ideas</option>
+        <option>Events</option>
+        <option>Journal</option>
+        <option>Contact</option>
+        <option>Home</option>
+        <option>Entertainment</option>
+    </select>
+   </div>
+  </section>
+
+  <p class="noNote">No note</p>  
+
+  <section class="notesContainer"></section>
+</main>
+
+ <script src="script.js"></script>
+</body>
+</html>
